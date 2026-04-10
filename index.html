@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Exercícios</title>
+    <style>
+        
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            color: #1e293b;
+        }
+
+        h2 { margin-bottom: 30px; color: #334155; }
+
+        
+        .accordion-container {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        details {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        details[open] {
+            border-color: #3b82f6;
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+        }
+
+       
+        summary {
+            list-style: none;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            user-select: none;
+        }
+
+        summary::after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid #94a3b8;
+            border-bottom: 2px solid #94a3b8;
+            transform: rotate(-45deg);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+            border-color: #3b82f6;
+        }
+
+        summary:hover { background-color: #f1f5f9; }
+
+       
+        .content {
+            padding: 10px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-top: 1px solid #f1f5f9;
+            background-color: #fcfcfd;
+        }
+
+        .content a {
+            text-decoration: none;
+            color: #475569;
+            font-size: 0.95rem;
+            padding: 10px 12px;
+            border-radius: 8px;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        .content a::before {
+            content: '🔗';
+            margin-right: 10px;
+            font-size: 0.8rem;
+        }
+
+        .content a:hover {
+            background-color: #3b82f6;
+            color: #ffffff;
+            border-color: #3b82f6;
+            transform: translateX(5px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>📚 Meus Exercícios</h2>
+
+    <div class="accordion-container">
+        
+        <details>
+            <summary>Exercícios do 2º Período</summary>
+            <div class="content">
+                <a href="https://github.com/ALDX38/dever-POO-periodo-2-1">Exercícios Básicos - Variáveis e Expressões</a>
+                <a href="https://github.com/ALDX38/dever-POO-periodo-2-2">Exercícios - Estruturas Condicionais</a>
+                <a href="https://github.com/ALDX38/dever-POO-periodo-2-3">Exercícios - Estruturas de Repetição</a>
+                <a href="https://github.com/ALDX38/dever-POO-periodo-2-4">Exercícios Vetores e Matrizes</a>
+                <a href="https://github.com/ALDX38/dever-POO-periodo-2-5">Exercícios strings e structs</a>
+                <a href="https://github.com/ALDX38/dever-POO-periodo-2-6">Exercícios Funções</a>
+            </div>
+        </details>
+    </div>
+
+</body>
+</html>
